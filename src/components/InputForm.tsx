@@ -313,6 +313,19 @@ export function InputForm({
                   side="bottom"
                   align="start"
                 >
+                  <div className="mb-4 pb-3 border-b border-gray-200">
+                    <h3 className="text-sm font-semibold text-gray-900">
+                      <a
+                        href="http://kssc.kostat.go.kr/ksscNew_web/kssc/common/ClassificationContent.do?gubun=1&strCategoryNameCode=001&categoryMenu=007&addGubun=no"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#3BC184] hover:text-[#2da570] underline"
+                      >
+                        한국표준산업분류 코드
+                      </a>
+                      {" "}기준
+                    </h3>
+                  </div>
                   <div className="space-y-3">
                     <div>
                       <p className="font-medium text-gray-900 text-xs leading-relaxed">
