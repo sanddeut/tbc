@@ -7,7 +7,16 @@ interface LiquidFuelSectionProps {
   results: any;
   showResults: boolean;
   updateInput: (section: string, field: string, value: any) => void;
-  openModal: (section: string) => void;
+  openModal: (
+    section:
+      | "electricity"
+      | "cityGas"
+      | "gasFuel"
+      | "liquidFuel"
+      | "districtHeating"
+      | "vehicle"
+      | "electricVehicle",
+  ) => void;
   disabled?: boolean;
 }
 

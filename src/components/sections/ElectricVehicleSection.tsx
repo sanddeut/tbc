@@ -15,7 +15,17 @@ interface ElectricVehicleSectionProps {
   showResults: boolean;
   updateInput: (section: string, field: string, value: any) => void;
   setInputs: React.Dispatch<React.SetStateAction<any>>;
-  openModal: (section: string) => void;
+  openModal: (
+    section:
+      | "electricity"
+      | "cityGas"
+      | "gasFuel"
+      | "liquidFuel"
+      | "districtHeating"
+      | "vehicle"
+      | "electricVehicle",
+  ) => void;
+  disabled?: boolean;
 }
 
 export function ElectricVehicleSection({
@@ -25,6 +35,7 @@ export function ElectricVehicleSection({
   updateInput,
   setInputs,
   openModal,
+  disabled = false,
 }: ElectricVehicleSectionProps) {
   const handleNumberKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "-" || e.key === "e" || e.key === "E") {

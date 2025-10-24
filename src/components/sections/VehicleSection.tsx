@@ -10,7 +10,16 @@ interface VehicleSectionProps {
   showResults: boolean;
   updateInput: (section: keyof CalculationInputs, field: string, value: any) => void;
   setInputs: React.Dispatch<React.SetStateAction<CalculationInputs>>;
-  openModal: (section: "electricity" | "cityGas" | "oilBoiler" | "districtHeating" | "vehicle") => void;
+  openModal: (
+    section:
+      | "electricity"
+      | "cityGas"
+      | "gasFuel"
+      | "liquidFuel"
+      | "districtHeating"
+      | "vehicle"
+      | "electricVehicle",
+  ) => void;
   disabled?: boolean;
 }
 

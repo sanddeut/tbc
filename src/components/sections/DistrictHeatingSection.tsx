@@ -27,9 +27,11 @@ interface DistrictHeatingSectionProps {
     section:
       | "electricity"
       | "cityGas"
-      | "oilBoiler"
+      | "gasFuel"
+      | "liquidFuel"
       | "districtHeating"
-      | "vehicle",
+      | "vehicle"
+      | "electricVehicle",
   ) => void;
   disabled?: boolean;
 }
