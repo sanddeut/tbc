@@ -1103,7 +1103,6 @@ export function CalculationModal({
               <div className="font-medium">{sourceInfo.title}</div>
               <div>- {sourceInfo.method}</div>
               <div>- {sourceInfo.emissionFactor}</div>
-              {section !== "electricity" && section !== "electricVehicle" && <div>- {sourceInfo.heating}</div>}
             </div>
           </div>
 

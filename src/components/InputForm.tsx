@@ -313,7 +313,7 @@ export function InputForm({
                   side="bottom"
                   align="start"
                 >
-                  <div className="mb-4 pb-3 border-b border-gray-200">
+                  <div className="mb-6">
                     <h3 className="text-sm font-semibold text-gray-900">
                       <a
                         href="http://kssc.kostat.go.kr/ksscNew_web/kssc/common/ClassificationContent.do?gubun=1&strCategoryNameCode=001&categoryMenu=007&addGubun=no"
