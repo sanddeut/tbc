@@ -438,7 +438,7 @@ export function InputForm({
         </section>
 
         {/* 구분선 */}
-        <div className="border-t border-gray-100 my-[72px] mx-[0px] my-[80px]"></div>
+        <div className="border-t border-gray-100 my-[80px] mx-[0px]"></div>
 
         {/* 설비 이용 섹션 */}
         <section
@@ -477,7 +477,7 @@ export function InputForm({
         </section>
 
         {/* 구분선 */}
-        <div className="border-t border-gray-100 my-[72px] mx-[0px] my-[80px]"></div>
+        <div className="border-t border-gray-100 my-[80px] mx-[0px]"></div>
 
         {/* 차량 이용 섹션 */}
         <section

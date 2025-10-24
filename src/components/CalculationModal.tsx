@@ -249,6 +249,8 @@ export function CalculationModal({
     } else if (section === "districtHeating") {
       if (provider === "national") {
         emissionFactor = "배출계수: Tier 2 (2013 국가 열(스팀) 배출계수)";
+      } else if (provider === "others") {
+        emissionFactor = "배출계수: 직접 입력";
       } else {
         emissionFactor = "배출계수: Tier 3 (한국지역난방공사 배출계수, 2024년, 4기 배출권할당시)";
       }
