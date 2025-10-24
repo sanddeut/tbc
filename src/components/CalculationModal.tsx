@@ -300,11 +300,11 @@ export function CalculationModal({
             <div className="text-[13px] text-gray-600 space-y-2">
               <div className="text-[13px]">
                 <span className="font-medium text-gray-700">CO₂:</span><br/>
-                (연료 사용량 × 열량계수 × 온실가스별 배출계수 × 산화계수 × 10⁻⁶) × GWP
+                (연료 사용량 × 순발열량 × 온실가스별 배출계수 × 산화계수 × 10⁻⁶) × GWP
               </div>
               <div className="text-[13px]">
                 <span className="font-medium text-gray-700">CH₄, N₂O:</span><br/>
-                (연료 사용량 × 열량계수 × 온실가스별 배출계수 × 10⁻⁶) × GWP
+                (연료 사용량 × 순발열량 × 온실가스별 배출계수 × 10⁻⁶) × GWP
               </div>
             </div>
           </div>
@@ -315,11 +315,11 @@ export function CalculationModal({
             <div className="text-[13px] text-gray-600 space-y-2">
               <div>
                 <span className="font-medium text-gray-700">CO₂:</span><br/>
-                (연료 사용량 × 열량계수 × 온실가스별 배출계수 × 산화계수 × 10⁻⁶) × GWP
+                (연료 사용량 × 순발열량 × 온실가스별 배출계수 × 산화계수 × 10⁻⁶) × GWP
               </div>
               <div>
                 <span className="font-medium text-gray-700">CH₄, N₂O:</span><br/>
-                (연료 사용량 × 열량계수 × 온실가스별 배출계수 × 10⁻⁶) × GWP
+                (연료 사용량 × 순발열량 × 온실가스별 배출계수 × 10⁻⁶) × GWP
               </div>
             </div>
           </div>
@@ -327,7 +327,7 @@ export function CalculationModal({
       case "vehicle":
         return (
           <div className="leading-relaxed">
-            <div className="font-medium text-gray-800 mb-3 text-[13px]">배출량(tGHG) = 연료 사용량(KL) × 열량계수 × 배출계수 × 10⁻⁶</div>
+            <div className="font-medium text-gray-800 mb-3 text-[13px]">배출량(tGHG) = 연료 사용량(KL) × 순발열량 × 배출계수 × 10⁻⁶</div>
             
             {/* 비용 입력 모드일 때만 사용량 변환 기준 표시 */}
             {allInputs?.vehicle.inputType === "cost" && (
